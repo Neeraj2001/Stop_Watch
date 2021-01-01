@@ -1,0 +1,106 @@
+body {
+  background-color: #495370;
+  /* background:linear-gradient(30deg, #425a75, #999); */
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 48px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+
+  text-align: center;
+  line-height: 59px;
+
+  padding: 0 64px;
+  margin: 0;
+}
+
+.stopwatch {
+  display: grid;
+  justify-items: center;
+  grid-row-gap: 23px;
+  width: 100%;
+  padding-top: 25px;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 270px;
+  width: 270px;
+
+  border: 2px solid;
+  border-radius: 50%;
+}
+
+.time {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  font-size: 48px;
+}
+
+.diamond {
+  font-weight: 900;
+
+  color: #d9ebf4;
+  text-shadow: 0 0 0px #fff, 0 0 50px #9ac5db;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+
+  width: 187px;
+}
+
+.button {
+  position: relative;
+  color: #555;
+  background:linear-gradient(60deg, #fff,#bdcdfc);
+  border-radius: 90px;
+  text-align: center;
+  margin: 10px;
+  font-size: 30px;
+  box-shadow:
+    .5px -.5px 1px 1px #fff,
+    -1px 1px 1px 1px #343d59,
+    -5px 8px 20px 1px #343d59;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  user-select: none;
+}
+
+.button.sm {
+  width: 80px;
+  height: 80px;
+}
+
+.button.md {
+  width: 240px;
+  height: 80px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:active {
+  font-size: 26px;
+  box-shadow:
+    .5px -.5px 1px .5px #fff,
+    -1px 1px 1px .5px #343d59,
+    -1px 4px 10px 1px #343d59;
+}
+
+#playButton {
+  display: block;
+}
+
+#pauseButton {
+  display: none;
+}
